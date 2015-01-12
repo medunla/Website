@@ -1,0 +1,366 @@
+
+
+html {
+    background: url("../img/bg-01.jpg") no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: #111;
+}
+
+body {
+	width: 12800px;
+	height: 1100px;
+	background: url("../img/bg_pattern.png") repeat fixed;
+	background-position: center;
+	font-family: 'bebasneue_reg,thsarabunnew';
+	font-size: 18px;
+	color: #eee;
+	margin: 0 auto;
+	position: absolute;
+	z-index: -100;
+
+}
+
+
+
+.font_bold {
+	font-weight: bold;
+}
+.margin_top_50 {
+	margin-top: 50px;
+}
+.margin_top_100 {
+	margin-top: 100px;
+}
+.padding_top_150 {
+	padding-top: 150px;
+}
+.float_left {
+	float: left;
+}
+.text_title {
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 30px;
+	font-family: 'bebasneue_reg';
+}
+.text_header {
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 60px;
+	font-family: 'bebasneue_bold';
+}
+.border_right {
+	box-sizing: border-box; 
+	border-right: 1px solid #eee;
+}
+.border_left {
+	box-sizing: border-box; 
+	border-left: 1px solid #111;
+}
+.img_icon {
+	width: 25px;
+}
+.font_th {
+	font-family: 'thsarabunnew' ;
+}
+
+
+#body_wrapper {
+	width: 960px;
+	margin: 0 auto; 
+}
+#container {
+	width: 960px;
+}
+#logo {
+	width: 355px;
+	height: 345px;
+	margin: 0 auto; 
+}
+#content {
+	width: 600px;
+	height: 300px;
+	margin: 0 auto;
+}
+#column_4 {
+	width: 150px;
+	float: left;
+	font-size: 16px;
+	font-family: 'bebasneue_reg';
+	letter-spacing: 2px;
+}
+#column_3 {
+	width: 320px;
+	height: 600px;
+	float: left;
+}
+
+
+
+
+
+
+#about_wrapper{
+	width: 12800px;
+	height: 1100px;
+}
+#faculty {
+	width: 1600px;
+	height: 100%;
+	float: left;
+}
+#manager {
+	width: 4800px;
+	height: 100%;
+	float: left;
+	background-color: #191919;
+}
+#article {
+	width: 1600px;
+	height: 100%;
+	float: left;
+}
+#research {
+	width: 1600px;
+	height: 950px;
+	float: left;
+	background-color: #191919;
+}
+#addmission {
+	width: 1600px;
+	height: 100%;
+	float: left;
+
+}
+
+
+
+
+
+
+
+header {
+	width: 100%;
+	height: 125px;
+	background-color: #111;
+	margin: 0 auto;
+
+}
+#header {
+	width: 100%;
+	height: 50px;
+	background-color: #262626;
+}
+#header_box {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+#menu {
+	width: 400px;
+	float: right;
+	font-family: 'bebasneue_reg';
+	font-size: 20px;
+}
+#menu_column {
+	width: 100px;
+
+	float: left;
+}
+#logo_ict {
+	width: 520px;
+	float: left;
+}
+
+#header_nav {
+	width: 400px;
+	height: 75px;
+	padding-top: 50px;
+}
+#header_nav p {
+	font-family: 'bebasneue_bold';
+	font-size: 18px;
+	color: #d96c00;
+}
+#container_about {
+	width: 960px;
+}
+
+
+
+
+#box {
+	height: 370px;
+	font-size: 30px;
+	line-height: 0;
+}
+#box_history {
+	background-color: #111;
+	opacity: 0.5;
+	width: 1600px;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: -450px;
+	z-index: -50;
+	position: absolute;
+}
+#history_detail {
+	height: 370px;
+	font-size: 20px;
+	column-count:2;
+	font-family: 'thsarabunnew';
+	z-index: 50px;
+}
+#history_detail p {
+	width: 440px;
+	float: left;
+}
+#history_detail p span {
+	font-size: 36px;
+} 
+
+
+
+
+
+#box_ {
+	font-size: 30px;
+	line-height: 0;
+}
+#manager_wrapper {
+	width: 1600px;
+	float: left;
+}
+#manager_box{
+	width: 960px;
+	height: 300px;
+	font-family: 'thsarabunnew';
+	font-size: 18px;
+	line-height: 15px;
+}
+#manager_box img {
+	width: 150px;
+	height: 200px;
+}
+.detail {
+	width: 150px;
+	height: 250px; 
+	float: left;
+	margin-right: 40px;
+}
+.detail_x {
+	width: 170px;
+	height: 250px;
+	margin-left: -5px;
+	float: left;
+}
+
+
+
+
+
+#article_box {
+	width: 960px;
+	height: 315px;
+	background-color: #000;
+}
+#article_box_news {
+	width: 215px;
+	height: 315px;
+	float: left;
+	margin-right: 25px;
+	background-color: gray;
+}
+
+
+
+
+
+#research_box {
+	width: 470px;
+	float: left;
+	font-family: 'thsarabunnew';
+	font-size: 18px;
+	background: #191919;
+}
+#research_box ul li {
+	list-style-type:none;
+}
+
+
+
+
+
+
+#bg_add {
+	width: 1600px;
+	height: 370px;
+	position: absolute;
+	z-index: -50;
+	background: url("../img/0.jpg");
+
+}
+#box_add {
+	width: 1600px;
+	z-index: 50;
+	height: 370px;
+	font-size: 30px;
+	line-height: 0;
+}
+#addmission_box {
+	width: 1600px;
+	height: 500px;
+	background-color: #191919;
+	margin: -70px auto;
+	float: left;
+
+}
+#addmission_box_detail {
+	width: 960px;
+	font-family: 'thsarabunnew';
+	font-size: 18px;
+	margin: 0 auto;
+}
+#addmission_box_detail span {
+	font-size: 24px;
+}
+
+/*----------------------------*/
+
+a:link {
+	text-decoration:none;
+	color: #eee;
+}
+a:visited {
+	text-decoration:none;
+	color: #eee;
+}
+a:hover {
+	text-decoration:none;
+	color: #d96c00;
+}
+a:active {
+	text-decoration:underline;
+	color: #d96c00;
+}
+
+
+
+
+a.link:link {
+	text-decoration:none;
+	color: #d96c00;
+}
+a.link:visited {
+	text-decoration:none;
+	color: #d96c00;
+}
+a.link:hover {
+	text-decoration:underline;
+	color: #d95400;
+}
+a.link:active {
+	text-decoration:underline;
+	color: #d95400;
+}

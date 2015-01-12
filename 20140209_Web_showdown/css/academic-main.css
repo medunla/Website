@@ -1,0 +1,171 @@
+
+.page2{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 100;
+}
+
+/*-----------------------------------------< adjus >---*/
+.left{
+	left: 0;
+}
+.center{
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+
+}
+.right{
+	right: 0;
+}
+.cr{
+	clear: both;
+}
+/*-------------------------------------------------*/
+.head-academic{
+	position: absolute;
+	width: 960px;
+	height: 130px;
+	/*background: #ccc;*/
+	top: 15%;
+}
+/*-------------------------------------------------*/
+.wrapitem{
+	width: 960px;
+	height: 590px;
+	/*background: yellow;*/
+	position: relative;
+	top: 30%;
+	overflow: hidden;
+
+}
+/*-------------------------------------------------*/
+.column{
+	width: 320px;
+	height: 500px;
+	/*background: green;*/
+	position: absolute;
+	float: left;
+	margin: 0 auto;
+	transition:width 0.3s linear,background 0.5s;
+	z-index: 100;
+}
+.column img{
+	margin-left: 10px;
+}
+
+.columnfull{
+	width: 100%;
+	/*background: red;*/
+	transition:width 0.3s linear,background 0.5s;
+
+	z-index: 200;
+}
+/*-------------------------------------------< hidden info >----*/
+.web-sec{
+	width: 100%;
+	height: 100%;
+	/*background: #ccc;*/
+	z-index: 300;
+	position: absolute;
+}
+.game-sec{
+	width: 100%;
+	height: 100%;
+	/*background: #ccc;*/
+	z-index: 300;
+	position: absolute;
+}
+.anim-sec{
+	width: 100%;
+	height: 100%;
+	/*background: #ccc;*/
+	z-index: 300;
+	position: absolute;
+}
+/*------------------------*/
+.sec{
+	width: 100%;
+	height: 100%;
+	/*background: #ccc;*/
+	z-index: 300;
+	position: absolute;
+}
+/*-----------------------------------------------*/
+.btn{
+	width: 95px;
+	height: 25px;
+	/*background: pink;*/
+	z-index: 1000;
+	cursor: pointer;
+	float: left;
+	
+}
+
+/*++++++++++++++++++++++++++++++*/
+#academic_box {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	font-size: 18px;
+	font-family: 'thsarabunnew';
+	margin-top: 20px;
+}
+#academic_box_title span {
+	font-family: 'bebasneue_bold';
+	font-size: 32px;
+	line-height: 0;
+}
+#academic_box_title p {
+	font-size: 20px;
+	line-height: 0;
+	font-family: 'thsarabunnew_bold';
+}
+#academic_box_text span {
+	color:#d96c00;
+	font-size: 20px;
+	font-family: 'thsarabunnew_bold';
+}
+
+.border_right {
+	box-sizing: border-box; 
+	border-right: 1px solid #d96c00;
+}
+.border_left {
+	box-sizing: border-box; 
+	border-left: 1px solid #111;
+}
+.text_header {
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 60px;
+	font-family: 'bebasneue_bold';
+	float: right;
+}
+.font_th {
+	font-family: 'thsarabunnew' ;
+	float: right;
+
+}
+/**********************************/
+#web_content {
+	width: 960px;
+	height: 550px;
+}
+#web_box {
+	width: 470px;
+	height: 500px;
+	font-family: 'thsarabunnew';
+	font-size: 18px;
+	float: left;
+	margin-left: 10px;
+}
+#web_box span {
+	font-size: 24px;
+	width: 470px;
+	float: left;
+	font-family: 'thsarabunnew_bold';
+	color: #d96c00;
+}

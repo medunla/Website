@@ -1,0 +1,411 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'Quark-Light';
+	font-size: 24px;
+}
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.container {
+	width: 960px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -480px;
+}
+.tran-0-3s {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.tran-0-5s {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+a:link, a:visited, a:hover {
+	text-decoration: none;
+}
+.hide{
+	display: none;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------
+ * Index page
+ * ==> Login page
+ * ==> Menu page(after login)
+ * ----------------------------------------------------------------------------------------------------------------*/
+
+/* --------------------
+ * ---- Login page ----
+ * --------------------*/
+.BG {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -5;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.BG-loginPage {
+	background-image: url(../../img/loginPage/bg.jpg);	
+}
+#loginPage {
+	height: 400px;
+	margin-top: -200px;
+}
+#logo {
+	width: 457px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+#loginPage p{
+	text-align: center;
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+/* ==> Button login
+ */
+.common {
+	width: 283px;
+	height: 65px;
+	padding-top: 15px;
+	text-align: center; 
+	text-transform: uppercase;
+	font-size: 24px;
+	font-family: 'Quark-Bold';	
+	color: #fff;
+	border-radius: 5px;
+}
+.wrap2 {
+	position: relative;
+	display: block;
+	width: 283px;
+	height: 65px;
+	margin: 20px auto;
+	perspective: 283px;
+	transition: transform 0.5s ease;
+	
+}
+.wrap2 .button {
+	background: #f45c6e;
+	perspective-origin: 10px 100px;
+	transform-origin: center center;
+	transform: rotateY(0deg);
+	backface-visibility: hidden;
+}
+.wrap2 .button2 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #3c5a98;
+	perspective-origin: 10px 100px;
+	transform-origin: center center;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+.wrap2:hover .button {
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.wrap2:hover .button2 {
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+
+
+/* --------------------
+ * ---- Menu page -----
+ * --------------------*/
+.BG-menuPage {
+	background-image: url(../../img/menuPage/bg.jpg);	
+}
+#menuPage {
+	height: 600px;
+	margin-top: -300px;
+}
+.styleAllPage h1{
+	font-family: 'SpaceAge';
+	font-size: 55px;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 60px;
+}
+.styleAllPage p{
+	margin: 0;
+	padding-bottom: 5px;
+	text-align: center;
+}
+#menuPage h1{
+	color: #8860a9;
+}
+.menuWrapper {
+	width: 876px;
+	margin: 30px auto 0 auto;
+}
+.menu {
+	width: 272px;
+	float: left;
+	margin: 0 10px;
+}
+.picture-wrapper {
+	position: relative;
+	width: 272px;
+	height: 272px;
+}
+.border-white {
+	background: #fff;
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: absolute;
+	z-index: -1;
+}
+.border-hover {
+	width: 238px;
+	height: 238px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: -1;
+	margin: 17px;
+}
+.border-hover-blue {
+	background: #26b8bb;
+}
+.picture-wrapper img{
+	width: 238px;
+	height: 238px;
+	margin: 17px;
+	cursor: pointer;
+}
+.picture-wrapper:hover .border-hover{
+	width: 272px;
+	height: 272px;
+	margin: 0;
+}
+.caption-menu {
+	padding-top: 20px;
+	text-align: center;
+	font-size: 18px;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------
+ * Payakorn page
+ * ----------------------------------------------------------------------------------------------------------------*/
+.BG-payakornPage {
+	background-image: url(../../img/payakornPage/bg.jpg);	
+}
+#payakornPage {
+	height: 750px;
+	margin-top: -375px;
+}
+#payakornPage h1{
+	color: #f26c4f;
+}
+.menu-spacail {
+	margin: -15px 10px 0 10px;
+}
+.menu-marginLeft {
+	margin-left: 160px;
+}
+.border-hover-day {
+	background: #94e2c8;
+}
+.border-hover-chiness {
+	background: #f26c4f;
+}
+.border-hover-star {
+	background: #5674ba;
+}
+.border-hover-India {
+	background: #f7941d;
+}
+.border-hover-Egypt {
+	background: #bd8dbf;
+}
+.btn-back {
+	position: absolute;
+	z-index: 5;
+	top: 50%;
+	margin-top: -35px;
+	margin-left: 20px;
+	
+}
+.btn-effect-scaleUp {
+	-webkit-transform: scale(.8);
+	-moz-transform: scale(.8);
+	-ms-transform: scale(.8);
+	-o-transform: scale(.8);
+	transform: scale(.8);
+}
+.btn-effect-scaleUp:hover {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------
+ * Taytuk page
+ * ----------------------------------------------------------------------------------------------------------------*/
+.BG-taytukPage {
+	background-image: url(../../img/taytukPage/bg.jpg);	
+}
+#taytukPage {
+	height: 750px;
+	margin-top: -375px;
+}
+#taytukPage h1{
+	color: #f26520;
+}
+.border-hover-name {
+	background: #8ec63f;
+}
+.border-hover-email {
+	background: #f7941d;
+}
+.border-hover-tel {
+	background: #a286c0;
+}
+.border-hover-time {
+	background: #8de1c7;
+}
+.border-hover-ghost {
+	background: #f26c4f;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------
+ * Mahavate page
+ * ----------------------------------------------------------------------------------------------------------------*/
+.BG-mahavatePage {
+	background-image: url(../../img/mahavatePage/bg.jpg);	
+}
+#mahavatePage {
+	height: 750px;
+	margin-top: -375px;
+}
+#mahavatePage h1{
+	color: #2d3192;
+}
+.border-hover-orange {
+	background: #f36523;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------
+ * Mahavate page
+ * ----------------------------------------------------------------------------------------------------------------*/
+.BG-resultsPage-DateWeek {
+	background-image: url(../../img/resultsPage/bg-DateWeek.jpg);	
+}
+.BG-resultsPage-Zodiac {
+	background-image: url(../../img/resultsPage/bg-Zodiac.jpg);	
+}
+.BG-resultsPage-Naksat {
+	background-image: url(../../img/resultsPage/bg-Naksat.jpg);	
+}
+.BG-resultsPage-India {
+	background-image: url(../../img/resultsPage/bg-India.jpg);	
+}
+.BG-resultsPage-Egypt {
+	background-image: url(../../img/resultsPage/bg-Egypt.jpg);	
+}
+.BG-resultsPage-TimeBirth {
+	background-image: url(../../img/resultsPage/bg-TimeBirth.jpg);	
+}
+.BG-resultsPage-Name {
+	background-image: url(../../img/resultsPage/bg-Name.jpg);	
+}
+.BG-resultsPage-Phone {
+	background-image: url(../../img/resultsPage/bg-Phone.jpg);	
+}
+.BG-resultsPage-Email {
+	background-image: url(../../img/resultsPage/bg-Email.jpg);	
+}
+.BG-resultsPage-Fear {
+	background-image: url(../../img/resultsPage/bg-Fear.jpg);	
+}
+#resultsPage {
+	height: 700px;
+	margin-top: -350px;
+}
+#picture-results {
+	width: 170px;
+	height: 170px;
+	margin: 0 auto;
+}
+#picture-results img{
+	border-radius: 50%;
+	border: 5px solid #5674b9;
+}
+#name-results {
+	width: 700px;
+	margin: 0 auto;	
+}
+#name-results p{
+	text-align: center;
+	color: #5674b9;
+	font-size: 40px;
+	margin: 10px auto;
+	font-family: 'Quark-Bold';
+}
+#content-box {
+	width: 820px;
+	height: 365px;
+	background: #fff;
+	border-radius: 10px;
+	padding: 20px 20px 20px 30px;
+	margin: 0 auto;
+}
+#head-content {
+	height: 50px;
+	margin-top: 0;
+	margin-bottom: 10px; 
+	font-size: 36px;
+	color: #5674b9;
+	font-style: normal;
+}
+#content-results {
+	width: 100%;
+	height: 255px;
+	padding-right: 10px;
+	overflow: auto;
+}
+#results-btn {
+	width: 650px;
+	margin: 30px auto 0 auto;
+}
+#btn-back-results {
+	float: left;
+}
+#btn-share {
+	float: right;
+}

@@ -1,0 +1,167 @@
+/*
+ * page fullscreen
+ */
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.page-fullscreen{
+	width: 100%;
+	height: 100%;
+	position: relative;	
+}
+.home{
+	height: 101%;
+}
+
+#nav{
+	position: fixed;
+	z-index: 60;
+	top: 0;
+}
+
+
+/*
+ *	Style image #1
+ *	-- Border
+ */
+.style-image-border{
+	border: 1px solid #eee;
+	padding: 5px;
+	background: #eee;
+}
+.style-image-border *{
+	float: left;
+	clear: both;
+}
+.style-image-border figure{
+	width: 400px;
+	height: 300px;
+	margin: 0;
+	overflow: hidden;
+}
+.style-image-border img{
+	width: 100%;
+}
+.style-image-border figcaption{
+	margin: 5px 0;
+}
+
+/*
+ *	Style image #2
+ *	-- Showcase
+  */
+.style-image-showcase{
+	width: 400px;
+	height: 300px;
+	cursor: pointer;
+	overflow: hidden;	
+}
+.style-image-showcase *{
+	float: left;
+	clear: both;
+}
+.style-image-showcase .color-tint{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	position: absolute;
+	z-index: 50;
+	top: -130%;
+	opacity: 0.5;
+}
+.style-image-showcase figure{
+	width: 400px;
+	height: 300px;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+}
+.style-image-showcase img{
+	width: 100%;
+}
+.style-image-showcase figcaption{
+	width: 100%;
+	height: 30%;
+	background: rgba(0,0,0,0.75);
+	overflow: hidden;
+	top: 0%;
+	color: #aaa;
+}
+.style-image-showcase figcaption h3{
+	line-height: 0;
+}
+
+.style-image-showcase:hover .color-tint{
+	opacity: 0;
+}
+.style-image-showcase:hover figcaption{
+	top: -30%;
+}
+
+/*
+ *	Icon in image-showcase
+ */
+#icon-showcase{
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	margin-top: -20px;
+	right: 10px;
+	position: absolute;
+}
+
+
+
+/*
+ *	Transition
+ */
+.transition-0-3s {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.transition-0-5s {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+
+/*
+ *	Content in touch slider
+ */
+.lorem{
+	width: 960px;
+	height: 100%;
+	border-left: 1px solid #000;
+	font-size: 20px;
+}
+
+/*
+ *	Header effect
+ */
+
+.ha-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	z-index: 1000;
+	
+}
+.ha-header-hide{
+	opacity: 0;
+}
+.ha-header-about, .ha-header-academic, .ha-header-showcase, .ha-header-sitemap {
+	opacity: 1;
+}
+.ha-header-about #header-about, .ha-header-academic #header-academic, .ha-header-showcase #header-showcase, .ha-header-sitemap #header-sitemap{
+	color: #d96c00;
+}
+
