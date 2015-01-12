@@ -1,0 +1,776 @@
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- global ------------------------------------------ */
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+
+/*---------- set font ----------*/
+@font-face {
+	font-family: 'CaviarDreams';
+	src: url('fonts/CaviarDreams.eot');
+	src: local('☺'), url('fonts/CaviarDreams.woff') format('woff'), url('fonts/CaviarDreams.ttf') format('truetype'), url('fonts/CaviarDreams.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'THSarabunNew';
+	src: url('fonts/THSarabunNew.eot');
+	src: local('☺'), url('fonts/THSarabunNew.woff') format('woff'), url('fonts/THSarabunNew.ttf') format('truetype'), url('fonts/THSarabunNew.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+  font-family: 'entypo-selected';
+  src: url("fonts/entypo-selected.eot");
+  src: url("fonts/entypo-selected.eot?#iefix") format('embedded-opentype'), url("fonts/entypo-selected.woff") format('woff'), url("fonts/entypo-selected.ttf") format('truetype'), url("fonts/entypo-selected.svg#entypo-selected") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*---------- link ----------*/
+a:link { text-decoration: none; color: #666269; }
+a:visited { text-decoration: none; color: #666269; }
+a:hover { text-decoration: none; color: #fb6a01; }
+a:active { text-decoration: none; color: #666269; }
+
+/*---------- html ----------*/
+body{ 
+	margin: 0;
+	font-size: 24px;
+	color : #666269;
+	background: #e6e6e6;
+}
+.clear-l { clear: left; }
+.clear-r { clear: right; }
+.block { display: none; }
+.opacity0 { opacity: 0; }
+.opacity5 { opacity: 0.5; }
+.line-h { line-height: 0; }
+.margin-l1 { margin-left: 10px; }
+.margin-r1 { margin-right: 10px; }
+.margin-l2 { margin-left: 20px; }
+.margin-r2 { margin-right: 20px; }
+.margin-t15 { margin-top: 15px; }
+.margin--t15 { margin-top: -15px; }
+.hr-top { border-bottom: 1px solid #cccccd; margin-bottom: 30px; padding-bottom: 30px; }
+.hr { border-bottom: 1px solid #cccccd; margin-bottom: 30px; }
+::-moz-selection {background: #fb6a01; color: #fff;}
+::selection {background: #fb6a01; color: #fff;}
+.span-color { color: #fb6a01; }
+
+/* border inside */
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+/*---------- icon & bullet & button ----------*/
+
+/*-- icon --*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'entypo-selected';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  line-height: 1em;
+}
+
+.icon-cancel:before { content: '\2715'; } /* '✕' */
+.icon-plus-circle:before { content: '\50'; } /* 'P' */
+.icon-forward:before { content: '\47'; } /* 'G' */
+.icon-eye:before { content: '\56'; } /* 'V' */
+.icon-search:before { content: '\5a'; } /* 'Z' */
+.icon-link:before { content: '\4c'; } /* 'L' */
+
+/* icon */
+.icon-page {
+	width: 160px;
+	height: 160px;
+	font-family: 'CaviarDreams';
+	font-size: 132px;
+	text-align: center;
+	vertical-align: center;
+	color: #666269;
+	border: 1px solid #666269;
+
+	/* animation */
+	-webkit-transition: background 1s, border 1s, color 1s;
+	-o-transition-property: background, border, color;
+	-o-transition-duration: 1s, 1s, 1s;
+	-moz-transition-property: background, border, color;
+	-moz-transition-duration: 1s, 1s, 1s;
+	transition-property: background, border, color;
+	transition-duration: 1s, 1s, 1s;	
+}
+.icon-page p {
+	line-height: 0;
+	margin-top: 70px;
+}
+.icon-page-active {
+	width: 160px;
+	height: 160px;
+	font-family: 'CaviarDreams';
+	font-size: 132px;
+	text-align: center;
+	vertical-align: center;
+	color: #fff;
+	background: #fb6a01;
+	border: 1px solid #fb6a01;	
+}
+.icon-page-active p {
+	line-height: 0;
+	margin-top: 70px;
+}
+
+/* bullet */
+.bullet {
+	width: 20px;
+	height: 20px;
+	line-height: 0.8;
+	text-align: center;
+	font-family: 'THSarabunNew';
+	color: #666269;
+	border: 1px solid #666269;
+	float: left;
+
+	/* animation */
+	-webkit-transition: background 1s, border 1s, color 1s;
+	-o-transition-property: background, border, color;
+	-o-transition-duration: 1s, 1s, 1s;
+	-moz-transition-property: background, border, color;
+	-moz-transition-duration: 1s, 1s, 1s;
+	transition-property: background, border, color;
+	transition-duration: 1s, 1s, 1s;
+}
+.bullet-active {
+	width: 20px;
+	height: 20px;
+	line-height: 0.8;
+	text-align: center;	
+	font-family: 'THSarabunNew';
+	color: #fff;
+	background: #fb6a01;
+	float: left;
+}
+
+/* button */
+.button {
+	background: #fb6a01;
+	font-family: 'THSarabunNew';
+	color: #fff;
+	border: 0;
+
+	/* animation */
+	-webkit-transition: background 1s;
+	-o-transition-property: background;
+	-o-transition-duration: 1s;
+	-moz-transition-property: background;
+	-moz-transition-duration: 1s;
+	transition-property: background;
+	transition-duration: 1s;
+}
+
+/* text */
+.text-hover {
+	/* animation */
+	-webkit-transition: color 1s;
+	-o-transition-property: color;
+	-o-transition-duration: 1s;
+	-moz-transition-property: color;
+	-moz-transition-duration: 1s;
+	transition-property: color;
+	transition-duration: 1s;
+}
+
+.input1 { 
+	background: #e6e6e6;
+	border: 1px solid #fb6a01;	
+}
+
+/*----->> icon & bullet hover <<-----*/
+.icon-page:hover,.bullet:hover {
+	border: 1px solid #fb6a01;
+	background: #fb6a01;
+	color: #fff;
+}
+.button:hover {
+	background: #fba601;
+}
+.text-hover:hover {
+	color: #fb6a01;
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- header ------------------------------------------ */
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+
+/*---------- header & nav ---------- */
+header {
+	width: 100%;
+	height: 350px;
+	position: relative;
+}
+#header-bg {
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	opacity: 0.8;
+	z-index: -1;
+}
+#header-bg img {
+	width: 100%;
+}
+nav {
+	width: 960px;
+	margin: 0 auto;
+}
+#navigation-logo {
+	width: 190px;
+	height: 50px;
+	border: 1px solid #fff;
+	text-align: center;
+	color: #fff;
+	float: left;
+	margin-top: 20px;
+
+	/* animation */
+	-webkit-transition: border 1s, color 1s;
+	-o-transition-property: border, color;
+	-o-transition-duration: 1s, 1s;
+	-moz-transition-property: border, color;
+	-moz-transition-duration: 1s, 1s;
+	transition-property: border, color;
+	transition-duration: 1s, 1s;
+}
+#navigation-logo h1{
+	font-family: 'CaviarDreams';
+	font-size: 30px;	
+	line-height: 0;
+}
+.nav {
+	font-family: 'CaviarDreams';
+	font-size: 18px;
+	color: #fff;
+	float: left;
+	margin-left: 30px;
+	margin-top: 33px;
+	line-height: 0;
+
+	/* animation */
+	-webkit-transition: color 1s;
+	-o-transition-property: color;
+	-o-transition-duration: 1s;
+	-moz-transition-property: color;
+	-moz-transition-duration: 1s;
+	transition-property: color;
+	transition-duration: 1s;
+	
+}
+.nav-active {
+	font-family: 'CaviarDreams';
+	font-size: 18px;
+	color: #fb6a01;
+	float: left;
+	margin-left: 30px;
+	margin-top: 33px;
+	line-height: 0;
+
+	/* animation */
+	-webkit-transition: color 1s;
+	-o-transition-property: color;
+	-o-transition-duration: 1s;
+	-moz-transition-property: color;
+	-moz-transition-duration: 1s;
+	transition-property: color;
+	transition-duration: 1s;
+	
+}
+#nav-right{
+	float: right;
+}
+
+/* navigation hover */
+#navigation-logo:hover {
+	border: 1px solid #fb6a01;
+	color: #fb6a01;
+}
+.nav:hover {
+	color: #fb6a01;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- footer ------------------------------------------ */
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+
+footer {
+	width: 100%;
+	height: auto;
+	background: #cccccd;
+	font-family: 'THSarabunNew';
+	font-size: 20px;
+}
+.footer-home {
+	position: absolute;
+	bottom: 0;
+}
+#footer-wrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: right;
+}
+
+footer span {
+	color: #fb6a01;
+}
+.footer-icon {
+	background: #666269;
+	margin-right: 10px;
+
+	/* animation */
+	-webkit-transition: background 1s;
+	-o-transition-property: background;
+	-o-transition-duration: 1s;
+	-moz-transition-property: background;
+	-moz-transition-duration: 1s;
+	transition-property: background;
+	transition-duration: 1s;
+}
+
+
+/* hover */
+.footer-icon:hover {
+	background: #fb6a01;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- index ------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+
+#index-wrapper {
+	width: 100%;
+	height: auto;
+	clear: both;	
+}
+#index-container {
+	width: 960px;
+	height: auto;
+	padding: 40px 0;
+	margin: 0 auto;
+	clear: both;
+}
+.index-content {
+	width: 220px;
+	padding: 0 -10px;
+	margin: 0px 10px;
+	float: left;
+}
+#icon-page {
+	margin: 0 auto;
+	width: 60px;
+	height: 60px;
+	font-size: 50px;
+}
+#icon-page p {
+	margin-top: 30px;
+}
+.index-content-toppic {
+	font-family: 'CaviarDreams';
+	font-size: 24px;
+	text-align: center;
+	font-weight: lighter;
+}
+.index-content-description {	
+	font-family: 'THSarabunNew';
+	text-align: left;
+	margin-top: -10px;
+	line-height: 1;
+}
+#index-signup-bt {
+	width: 100%;
+	height: 40px;
+	font-size: 24px;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------- global Content -------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+
+.content-wrapper {
+	width: 100%;
+	height: auto;
+	clear: both;	
+}
+.content-container {
+	width: 960px;
+	height: auto;
+	margin: 0 auto;
+	padding: 40px 0;
+	clear: both;
+}
+#content-icon-wrapper {
+	width: 360px;
+	float: left;
+}
+#content-icon {
+	float: left;
+	margin: 0 10px 20px 10px;
+}
+.content-article-wrapper {
+	width: 600px;
+	padding: 0 10px;
+	float: left;
+}
+.content {
+	float: left;
+}
+.content h1 {
+	font-family: 'CaviarDreams';
+	font-size: 30px;
+	font-weight: lighter;
+	margin: 0;
+}
+.content p {
+	font-family: 'THSarabunNew';
+	line-height: 1;
+	margin-top: 10px;
+}
+.content2 h1 {
+	font-family: 'CaviarDreams';
+	font-size: 30px;
+	font-weight: lighter;
+	margin: 0;
+	color: #fb6a01;
+}
+.content2 p {
+	font-family: 'THSarabunNew';
+	line-height: 1.5;
+	margin-top: 10px;
+	color: #000;
+}
+.content2 b{
+	color: #fb6a01;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* ---------------------------------------- information ---------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+
+#information-information, #information-emblem {
+	width: 580px;
+	clear: both;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* -------------------------------------- trips & product -------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+
+#trips-menu {
+	width: 580px;
+	padding-bottom: 30px;
+	clear: both;	
+}
+#trips-menu h1 {
+	font-family: 'CaviarDreams';
+	font-size: 30px;
+	font-weight: lighter;
+	margin: 0;
+}
+#trips-menu p{
+	font-family: 'THSarabunNew';	
+	margin: 0 10px;
+	float: left;
+}
+.trips-menu-menu {
+	float: left;
+	margin-top: 10px;
+	clear: both;
+}
+#trips-information-2, #trips-information-3, #trips-information-4, #trips-information-5 { display: none; }
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------ gallery ------------------------------------------ */
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+
+#gallery-share-wrapper {
+	float: left;
+	width: 360px;
+	padding: 0 10px;
+}
+#gallery-share-head {	
+	background: #fb6a01;
+	height: 70px;
+	text-align: center;
+}
+#gallery-share-head h1 {	
+	padding-top: 20px;
+	margin: 0;
+	font-family: 'CaviarDreams';
+	font-size: 30px;
+	font-weight: lighter;
+	color: #fff;
+}
+#gallery-share-form {
+	/*margin-top: 10px; */
+	padding: 20px;
+	border: 1px solid #fb6a01;
+}
+#share-p{
+	font-family: 'CaviarDreams';
+	font-size: 20px;
+	color: #fb6a01;
+	margin: 10px 0;
+}
+#share-name {
+	width: 300px;
+	height: 35px;
+}
+#share-desc {
+	width: 300px;
+	height: 150px;
+}
+#share-bt {
+	width: 300px;
+	height: 35px;
+	margin: 10px 0;
+	font-size: 24px;
+}
+#gallery-wrapper {
+	padding-right: 0;
+	padding-left: 20px;
+}
+#img-wrapper {
+	width: 280px;
+	height: 200px;
+	overflow: hidden;
+	float:left;
+	margin-bottom: 20px;
+	font-family: 'THSarabunNew';
+	border: 1px solid #fb6a01;
+}
+figure {
+	width: 280px;
+	margin: 0;
+}
+figure img {
+	width: 100%;
+}
+#gallery-bullet {
+	float: right;
+}
+
+/*---- img hover effect ----*/
+.boxgrid{
+	width: 280px;
+	height: 200px;
+	float:left;
+	background:#161613;
+	overflow: hidden;
+	position: relative;
+}
+.boxgrid img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
+}
+.boxcaption{
+	float: left;
+	position: absolute;
+	background: #fb6a01;
+	height: 60px;
+	width: 100%;
+	opacity: .9;
+	padding-left: 10px;
+	padding-top: 5px;
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+ }
+ .captionfull .boxcaption {
+ 	top: 200px;
+ 	left: 0;
+ }
+ .boxcaption h3 {
+ 	color: #fff;
+ 	margin: 0;
+ 	font-size: 24px;
+ }
+ .boxcaption p {
+ 	color: #fff;
+ 	margin-top: -10px;
+ 	font-size: 20px;
+ }
+.icon-link {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    line-height: 26px;
+    text-align: center;
+    font-size: 18px;
+    text-indent: 2px;
+    padding-top: 5px;
+    cursor: pointer;
+
+    /* animation */
+	-webkit-transition: background 0.5s, color 0.5s;
+	-o-transition-property: background, color;
+	-o-transition-duration: 0.5s, 0.5s;
+	-moz-transition-property: background, color;
+	-moz-transition-duration: 0.5s, 0.5s;
+	transition-property: background, color;
+	transition-duration: 0.5s, 0.5s;
+}
+.icon-link:hover {
+	background: #666269;
+	color: #fb6a01;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------- Sign In & Sign Up ------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+
+.sign-p{
+	font-family: 'CaviarDreams';
+	font-size: 20px;
+	color: #fb6a01;
+	margin: 10px 0;
+	float: left;
+	clear: left;
+}
+.signIn-input {
+	width: 200px;
+	height: 35px;
+	float: right;
+	clear: right;
+}
+.signup-box-wrapper {
+	height: 460px;
+}
+.signUp-input {
+	width: 380px;
+	height: 35px;
+	float: right;
+	clear: right;
+}
+.signUp-input-fname {
+	width: 190px;
+	height: 35px;
+	float: right;
+}
+.signUp-input-lname {
+	width: 180px;
+	height: 35px;
+	float: right;
+	margin-left: 10px;
+}
+.signUp-input-address {
+	width: 380px;
+	height: 100px;
+	float: right;
+	clear: right;
+	margin-bottom: 10px;
+}
+#zipcode {
+	margin: 75px 0 10px 0;
+}
+#signUp-bt {
+	width: 380px;
+	height: 35px;
+	margin: 10px 0;
+	font-size: 24px;
+	float: right;
+	clear: both;
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------- Sign Up & Sign In & Sign Out & Upload --------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+
+
+#display-wrapper {
+	margin: 0 auto;
+	width: 360px;
+	padding: 0 10px;
+	margin-top: 50px;
+}
+#display-show {	
+	background: #fb6a01;
+	height: 70px;
+	text-align: center;
+}
+#display-show h1 {	
+	padding-top: 20px;
+	margin: 0;
+	font-family: 'CaviarDreams';
+	font-size: 30px;
+	font-weight: lighter;
+	color: #fff;
+}
+#display-infomation {
+	padding: 20px;
+	border: 1px solid #fb6a01;
+	font-family: 'THSarabunNew';
+	text-align: center;
+}
+#display-head {
+	color: #fb6a01;	
+	font-size: 36px;
+	line-height: 0;	
+}
+#display-desc {
+	font-size: 24px;
+}
+#display-bt {
+	width: 300px;
+	height: 35px;
+	margin-bottom: 10px;
+	font-size: 24px;
+}

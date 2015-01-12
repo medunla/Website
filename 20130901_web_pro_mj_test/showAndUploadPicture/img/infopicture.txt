@@ -1,0 +1,12 @@
+name01__!@#$%__desc01__!@#$%__medunla__!@#$%__img/img1.jpg__!@#$%__
+name02__!@#$%__desc02__!@#$%__medunla__!@#$%__img/img2.jpg__!@#$%__
+name03__!@#$%__desc03__!@#$%__medunla__!@#$%__img/img3.jpg__!@#$%__
+name04__!@#$%__desc04__!@#$%__medunla__!@#$%__img/img4.jpg__!@#$%__
+name05__!@#$%__desc05__!@#$%__medunla__!@#$%__img/img5.jpg__!@#$%__
+dd__!@#$%__dd__!@#$%__dw__!@#$%__img/img6.jpg__!@#$%__
+dd__!@#$%__dd__!@#$%__dw__!@#$%__img/img7.jpg__!@#$%__
+dd__!@#$%__dd__!@#$%__dw__!@#$%__img/img8.jpg__!@#$%__
+dd__!@#$%__dd__!@#$%__dw__!@#$%__img/img9.jpg__!@#$%__
+dd__!@#$%__dd__!@#$%__dw__!@#$%__img/img10.jpg__!@#$%__
+dd__!@#$%__dd__!@#$%__dw__!@#$%__img/img11.jpg__!@#$%__
+fgd__!@#$%__fgd__!@#$%__dg__!@#$%__img/img12.jpg__!@#$%__
