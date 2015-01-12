@@ -1,0 +1,179 @@
+/*-------------------------------------------------------*/
+/*---------------------- GLOBAL -------------------------*/
+/*-------------------------------------------------------*/
+
+body {
+	margin: 0;
+	background: #a1ce86;
+	color: #51483f;
+}
+.container {
+	width: 960px;
+	margin: 0 auto 20px;
+	padding: 20px;
+	background: #fff;
+}
+.container2 {
+	width: 400px;
+	margin: 20px auto 0px;
+	padding: 20px;
+	background: #fff;
+}
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+.clear-hr {
+	clear: both;
+	opacity: 0;
+}
+.float-l {
+	float: left;
+}
+.float-r {
+	float: right;
+}
+.clear-l {
+	clear: left;
+}
+.clear-r {
+	clear: right;
+}
+.cursor {
+	cursor: pointer;
+}
+table {
+	border: 1px solid #ec8972 ;
+	border-collapse: collapse;
+	width: 100%;
+}
+th {
+	background: #ec8972;
+}
+th, td {
+	border: 1px solid #ec8972 ;
+}
+fieldset {
+	border: 1px solid #a1ce86;
+	background: #fff;
+}
+legend {
+	background: #fff;
+	font-size: 20px;
+	padding: 0 10px;
+	color: #a1ce86;
+}
+input[type="submit"] {
+	margin-top: 5px;
+	width: 100%;
+	background: #a1ce86;
+	border: 1px solid #a1ce86;
+	color: #fff;
+	float: left;
+	clear: left;
+}
+input[type="submit"]:hover {
+	background: #fff;
+	border: 1px solid #a1ce86;
+	color: #a1ce86;
+}
+.btn-cancel {
+	margin-top: 5px;
+	width: 100%;
+	background: #ec8972;
+	border: 1px solid #ec8972;
+	color: #fff;
+	clear: left;
+}
+.btn-cancel:hover {
+	background: #fff;
+	color: #ec8972;
+}
+a:link, a:visited, a:hover { text-decoration: none; }
+
+.tr:hover {
+	background: #edac9d;
+	cursor: pointer;
+	color: #fff;
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+.icon-add {
+	width: 24px;
+	height: 24px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border: 1px solid #a1ce86;
+	cursor: pointer;
+}
+.icon-add:hover {
+	border: 1px solid #ec8972;	
+}	
+
+.td {
+	border: 1px solid #fff;
+}
+span {
+	font-size: 16px;
+	font-weight: normal;
+	color: #ccc;
+}
+
+/*-------------------------------------------------------*/
+/*--------------------- CONTAINER -----------------------*/
+/*-------------------------------------------------------*/
+
+.navigation {
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+	padding-top: 22px;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	font-size: 20px;
+	cursor: pointer;
+}
+#logout{	
+	width: 20%;
+	float: right;
+}
+
+#showRes, #showOrders, #showMember,
+#login, #register {
+	width: 100%;
+	float: left;
+}
+
+
+#showRes h1, #showOrders h1, #showMember h1 {
+	line-height: 0;	
+}
+
+
+.funcHide {
+	padding-top: 10px;
+	border-top: 1px dashed #ec8972;
+	display: none;
+}
+.funcHide input[type="button"], .funcHide input[type="submit"] {
+	width: 100px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.txtFunc {
+	float: left;
+	clear: left;
+	margin-bottom: 12px;
+}
+
+/* Defalue hide setting */
+#showOrders, #showResType, #showMember {
+	display: none;
+}

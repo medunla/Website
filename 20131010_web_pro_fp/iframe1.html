@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fancyBox - iframe demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+
+	<div id ="freesize3">
+
+		<form  action="edit_admin.php" method="POST" enctype="multipart/form-data" style ="margin:25px 0 0 0; padding:0 0 20px 0;">
+
+            <div class="reg_box_l"><h4>Item</h4><input style="width:350px;" type="text" name="itemName" ></div>  
+            <div style="clear:both;"></div>
+            <div class="reg_box_l"><h4>Price</h4><input style="width:350px;" type="text" name="itemPrice" ></div> 
+            <div style="clear:both;"></div>
+            <div class="reg_box_l"><h4>Information</h4><input style="height:100px;width:350px;" type="text" name="itemInfo" ></div> 
+    
+            <p class="clear-b"></p>
+            <div class="delbt-ok float-l clear-l"><input type="submit" onclick="del()" name="delete" value="OK"></div>
+            <div class="delbt-cancel float-r clear-r"><input type="submit" onclick="close()"  name="cancel_del" value="Cancel"></div>
+            <p class="clear-b"></p>
+			
+		</form>  
+	</div>
+</body>
+</html>

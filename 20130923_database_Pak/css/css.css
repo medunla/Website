@@ -1,0 +1,54 @@
+/*-------------------------------------------------------*/
+/*---------------------- GLOBAL -------------------------*/
+/*-------------------------------------------------------*/
+
+body {
+	margin: 0;
+	background: #ccc;
+}
+#container {
+	width: 960px;
+	margin: 20px auto;
+	padding: 20px;
+	background: #fff;
+}
+
+.hide {
+	display: none;
+}
+.clear-hr {
+	clear: both;
+	opacity: 0;
+}
+table {
+	border: 1px solid #ccc ;
+	border-collapse: collapse;
+	width: 100%;
+}
+th {
+	background: #ddd;
+}
+th, td {
+	border: 1px solid #ccc ;
+}
+a:link, a:visited, a:hover { text-decoration: none; }
+
+
+/*-------------------------------------------------------*/
+/*----------------------- MAIN --------------------------*/
+/*-------------------------------------------------------*/
+
+#logout{	
+	width: 20%;
+}
+
+#showStorage, #showDrugs, #funcStorage, #funcDrugs, #login, #register {
+	width: 48%;
+	margin: 0 1%;
+	float: left;
+
+}
+#showStorage h1, #showDrugs h1, #funcStorage h1, #funcDrugs h1 {
+	line-height: 0;	
+}
+
