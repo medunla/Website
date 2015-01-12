@@ -1,0 +1,6 @@
+﻿Test-header%endline%
+%endline%
+hashtag1%endline%
+medunla.rar%endline%
+HTML%next%JAVASCRIPT%endline%
+&lt;p&gt;&lt;h1&gt;efsefe&lt;/h1&gt;&lt;/p&gt;<br/><br/>&lt;br/&gt;%next%function escapeNBSP(original){<br/> var thechar=original.charCodeAt(0);<br/>  switch(thechar) {<br/>   case 32: return &quot;&amp;nbsp;&quot;; break; //space<br/>  }<br/>  return original;	<br/>}	<br/>

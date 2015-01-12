@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Document :: Upload</title>
+		<!-- META TAG -->
+		<meta charset="utf-8">
+		<meta name="description" content="Panupat document">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- CSS Link -->
+		<link rel="stylesheet" href="lib/css/style.css">
+		<link rel="stylesheet" href="lib/css/bootstrap.min.css">
+		<link rel="stylesheet" href="lib/css/bootstrap-theme.min.css">
+
+		<!-- JS -->
+		<script type="text/javascript" src="lib/js/eCSStender.js"></script>
+		<script type="text/javascript" src="lib/js/convertCode.js"></script>
+		
+
+	</head>
+	<body>
+        <div class="container">
+        	<!-- Header -->
+        	<header class="page-header row">
+        		<h1 class="col-sm-8">
+        			<span id="icon-document" class="glyphicon glyphicon-upload"></span>
+        			Upload
+        		</h1>
+			</header>
+			<!-- End Header --><!-- End Header --><!-- End Header --><!-- End Header -->
+
+			<!-- Section Upload -->
+			<section id="section-upload" class="container no-padding row">
+				<form action="upload-process.php" method="POST">
+
+					<!-- section-upload-head -->
+					<div id="section-upload-head" class="container no-padding">
+						<label class="col-lg-6 col-xs-12">
+							<h1 class="no-padding">
+								<span class="small">Header*</span>
+							</h1>
+							<input type="text" name="header" placeholder="Header" class="col-xs-12" />
+						</label>
+
+						<label class="col-lg-6 col-xs-12">
+							<h1 class="no-padding">
+								<span class="small">Description</span>
+							</h1>
+							<input type="text" name="subtext" placeholder="Description" class="col-xs-12" />
+						</label>
+
+						<label class="col-lg-6 col-xs-12">
+							<h1 class="no-padding">
+								<span class="small">Hashtag*</span>
+							</h1>
+							<input type="text" name="hashtag" placeholder="Hashtag" class="col-xs-12" />
+						</label>
+						
+						<label class="col-lg-6 col-xs-12">
+							<h1 class="no-padding">
+								<span class="small">Download</span>
+							</h1>
+							<input type="file" name="download" placeholder="Download" class="col-xs-12" />
+						</label>
+					</div>
+					<!-- end section-upload-head -->
+
+					<!-- section-upload-code -->
+					<div id="section-upload-code" class="container no-padding">
+						<!-- Code -->
+						<div id="code">
+							<label class="col-xs-12">
+								<h1 class="no-padding">
+									<span class="small">Type code*</span>
+								</h1>
+								<input type="text" name="type" placeholder="Type code" class="col-xs-12" />
+							</label>
+							
+							<label class="col-xs-12">
+								<h1 class="no-padding">
+									<span class="small">Code*</span>
+								</h1>
+								<textarea type="text" name="code" placeholder="Code" id="code-area" class="col-xs-12" ></textarea>
+							</label>
+							<span class="clearfix"></span>
+							<hr class="hr-white"/>
+						</div>
+						<!-- end Code -->
+
+						<span class="clearfix"></span>
+
+						<!-- Button incress code -->
+						<div id="btn-incress-code" class="col-xs-2">
+		        			<button class="btn btn-success tran-0-3s" type="button">
+		        				Add new<span class="glyphicon glyphicon-plus"></span>
+							</button>
+						</div>
+						<!-- end Button incress code -->
+					</div>
+					<!-- end section-upload-code -->
+
+				</form>
+			</section>
+			<!-- end Section Upload -->
+			
+			
+        </div>
+        <!-- end container -->
+	</body>
+</html>

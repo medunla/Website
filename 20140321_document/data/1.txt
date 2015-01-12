@@ -1,0 +1,6 @@
+﻿Test-header%endline%
+Test-subtext%endline%
+hashtag1%next%hashtag2%endline%
+null%endline%
+HTML%next%CSS%endline%
+&lt;!--&nbsp;Button&nbsp;incress&nbsp;code&nbsp;--&gt;<br/>						&lt;div&nbsp;id=&quot;btn-incress-code&quot;&nbsp;class=&quot;col-xs-2&quot;&gt;<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			&lt;button&nbsp;class=&quot;btn&nbsp;btn-success&nbsp;tran-0-3s&quot;&nbsp;type=&quot;button&quot;&gt;<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				Add&nbsp;new&lt;span&nbsp;class=&quot;glyphicon&nbsp;glyphicon-plus&quot;&gt;&lt;/span&gt;<br/>							&lt;/button&gt;<br/>						&lt;/div&gt;<br/>						&lt;!--&nbsp;end&nbsp;Button&nbsp;incress&nbsp;code&nbsp;--&gt;%next%body{ margin: 0; }%endline%

@@ -1,0 +1,123 @@
+
+<html>
+<head>
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <style type="text/css">
+        .animated {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .show {
+            display: block;
+        }
+
+        #container {
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <img src="http://i.imgur.com/2oVbl7z.png" class="animated" />
+    <img src="http://i.imgur.com/S5s0Mv1.png" class="animated" />
+    <img src="http://i.imgur.com/0vBEXL7.png" class="animated" />
+    <img src="http://i.imgur.com/ffg7v9n.png" class="animated" />
+    <img src="http://i.imgur.com/9FD5kdE.png" class="animated" />
+    <img src="http://i.imgur.com/QSMC8Dk.png" class="animated" />
+    <img src="http://i.imgur.com/1BKlz6P.png" class="animated" />
+    <img src="http://i.imgur.com/ynus4fv.png" class="animated" />
+    <img src="http://i.imgur.com/BCLNJJg.png" class="animated" />
+    <img src="http://i.imgur.com/ffdbE2G.png" class="animated" />
+    <img src="http://i.imgur.com/SUP4e9F.png" class="animated" />
+    <img src="http://i.imgur.com/J8vbySw.png" class="animated" />
+    <img src="http://i.imgur.com/A9LsV6C.png" class="animated" />
+    <img src="http://i.imgur.com/fo64978.png" class="animated" />
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<script type="text/javascript">
+$(document).ready(function () {
+    
+    // initialising variables for image sequence
+    var container = $('#container'),
+        activePicture = 0,
+        pictureCount = $('#container img').length,
+        lastScrollPosition = 0,
+        height = container.height(),
+        ScrollCount = 0,
+        scrollResolution = Math.floor(height / pictureCount);
+
+    // making first picture visible
+    if (window.pageYOffset === 0) {
+        container.find('img:eq(0)').addClass('show');
+    }
+        
+    function animateHorse() {
+        // detecting scroll direction
+        var currentScrollPosition = window.pageYOffset;
+                
+        if (currentScrollPosition >= (lastScrollPosition + scrollResolution)) {
+
+            if (currentScrollPosition > lastScrollPosition) { 
+                // down scroll
+                activePicture ++;
+            } else {
+                // up scroll
+                activePicture --;
+            }
+            
+            // removing every .show class
+            $(".animated").each(function() {
+                $(this).removeClass("show")
+            });
+            
+            // and adding it to the appropriate image
+            // identified through activePicture
+            $(".animated").eq(activePicture).addClass("show");
+
+            lastScrollPosition = currentScrollPosition;
+        }
+    }
+    
+    $(window).bind('scroll', function() {
+        animateHorse();
+    });// scroll
+    
+});// doc ready
+</script>
+</body>
+</html>
