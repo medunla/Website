@@ -1,0 +1,87 @@
+html,
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+body
+{
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: url('../images/bg.jpg') repeat top left;
+}
+
+h1
+{
+  font-size: 20px;
+  font-weight: normal;
+  color: #2e6e80;
+}
+
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.scroll-1
+{
+  position: fixed;
+}
+
+
+/**
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+.horizon
+{
+  z-index: -10;
+  width: 3000px;
+}
+
+.middle
+{
+  z-index: -9;
+  width: 4000px;
+}
+
+.front
+{
+  z-index: 5;
+  width: 6000px;
+}
+
+.box {
+  width: 500px;
+  height: 250px;
+  overflow: hidden;
+  float: left;
+  clear: both;
+  opacity: 0.5;
+}
+.wrap-box {
+  float: left;  
+}
+.box img {
+  width: 100%;
+}
+
+
+#wrapper {
+  margin-left: 50%;
+  width: 3000px;
+  height: 100%;
+  position: fixed;
+}
+
+.box:hover {
+  opacity: 1;
+}

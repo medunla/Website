@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="700px"
+	 height="700px" viewBox="0 0 700 700" enable-background="new 0 0 700 700" xml:space="preserve">
+<g id="Layer_1" display="none">
+	
+		<image display="inline" overflow="visible" opacity="0.5" width="1280" height="1024" xlink:href="6263DEB6.jpg"  transform="matrix(1 0 0 1 -27.8149 -56.958)">
+	</image>
+</g>
+<g id="Layer_3" display="none">
+	<rect display="inline" fill="#808285" width="700" height="700"/>
+</g>
+<g id="plane" display="none">
+	<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" d="M584.286,261.575
+		c0,59.248-32.475,106.108-58.316,154.581c-32.941,61.784-175.711,256.071-175.711,256.071S207.488,473.524,175.497,417.233
+		c-27.378-48.171-59.266-95.892-59.266-155.658c0-129.252,104.776-234.028,234.028-234.028
+		C479.51,27.547,584.286,132.323,584.286,261.575z"/>
+	
+		<circle display="inline" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" cx="350.259" cy="261.575" r="89.787"/>
+</g>
+<g id="mail">
+	
+		<rect x="17.518" y="117.178" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" width="665.482" height="491.78"/>
+	<line fill="none" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" x1="17.518" y1="117.178" x2="350.259" y2="373.22"/>
+	<line fill="none" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" x1="350.259" y1="373.22" x2="683" y2="117.178"/>
+</g>
+</svg>

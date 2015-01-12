@@ -1,0 +1,140 @@
+/* ----------------------------------------
+ * Color primaly
+ * ----------------------------------------
+ *  Blue		: #00aeef
+ *  Pink		: #f6a0b2
+ *  Orange		: #e59728
+ *
+ *  Black-1		: #5a5a5a => topic, darkness
+ *  Black-2		: #818181 => p, normal
+ *  Black-3		: #afafaf => p, light
+ *
+ *  background: : #f4f4f4
+ * ----------------------------------------
+ */
+
+@font-face {
+	font-family: 'THSarabunNew';
+	src: url('../fonts/THSarabunNew.eot');
+	src: local('☺'), url('../fonts/THSarabunNew.woff') format('woff'), url('../fonts/THSarabunNew.ttf') format('truetype'), url('../fonts/THSarabunNew.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body { background: #f4f4f4; width:100%; height:100%; overflow: auto; font-size: 18px; font-family: 'THSarabunNew'; }
+
+/*
+ * Padding, Margin, Clear
+ */
+.no-padding { padding: 0px; }
+.no-padding-l { padding-left: 0px; }
+.no-padding-r { padding-right: 0px; }
+
+.padding-l-15 { padding-left: 15px; }
+.padding-r-15 { padding-right: 15px; }
+.padding-l-r-15 { padding-left: 15px; padding-right: 15px; }
+
+.clear-b { clear: both; }
+.clear-l { clear: left; }
+.clear-r { clear: right; }
+
+/*
+ * Font, Color, Style-font
+ */
+.color-blue { color: #00aeef; }
+.color-pink { color: #f6a0b2; }
+.color-orange { color: #e59728; }
+.color-black1 { color: #565656; }
+
+/*
+ * Border
+ */
+.border-blue-pink {
+	/* The background is used to specify the border background */
+	background: -moz-linear-gradient(90deg, #f6a0b2, #00aeef);
+	background: -webkit-linear-gradient(90deg, #f6a0b2, #00aeef);
+	/* Background origin is the padding box by default.
+	Override to make the background cover the border as well. */
+	-moz-background-origin: border;
+	background-origin: border-box;
+}
+.border-blue-pink-line {
+	/* The background is used to specify the border background */
+	background: -moz-linear-gradient(180deg, #f6a0b2, #00aeef);
+	background: -webkit-linear-gradient(180deg, #f6a0b2, #00aeef);
+	/* Background origin is the padding box by default.
+	Override to make the background cover the border as well. */
+	-moz-background-origin: border;
+	background-origin: border-box;
+}
+
+/*
+ * Link
+ */
+a:link { text-decoration: none; color: #818181; }
+a:hover { text-decoration: none; color: #e59728; }
+a:visited { text-decoration: none; color: #818181; }
+
+.style-link-logo:link { color: #5a5a5a; }
+.style-link-logo:hover { color: #5a5a5a; }
+.style-link-logo:visited { color: #5a5a5a; }
+
+.style-link-work-img:link { color: #fff; }
+.style-link-work-img:hover { color: #fff; }
+.style-link-work-img:visited { color: #fff; }
+
+
+/* ------------------------------------------------------------------------------------------------------------------------
+ */
+
+/* ----------------------------------------
+ * index.php
+ * ----------------------------------------
+ * enter-site, header, work, about
+ * ----------------------------------------
+ */
+
+/*
+ * enter-site
+ */
+#enter-site { width: 100%; height: 100%; background-attachment: fixed; position: relative; }
+
+#enter-site-principle { margin-top: 10%; }
+#principle-img { border: 10px solid transparent; border-radius: 50%; width: 42%; margin: 50px 29% 30px 29%; }
+#enter-site-principle p { text-align: center; }
+
+#enter-site-arrow { position: absolute; left: 50%; bottom: 50px; }
+
+/*
+ * header
+ */
+#header { width: 100%; background: rgba(244, 244, 244, 0.5); }
+#header-border { width: 100%; height: 1px; }
+
+#navigation { }
+#navigation ul { list-style-type: none; padding: 0; }
+#navigation-logo { font-size: 50px; line-height: 1; color: #5a5a5a; }
+#navigation-work, #navigation-about, #navigation-contact { padding-top: 15px; }
+
+.header-style-big { padding-top: 50px; padding-bottom: 50px; }
+
+/*
+ * work
+ */
+
+#work { margin-top: 50px; }
+.work-wrap { margin-bottom: 50px; }
+#work img { width: 100%; }
+
+.work-img-screen { width: 100%; height: 100%; background: #e59728; position: relative; }
+.work-img-screen-link { width: 69px; height: 69px; border: 1px solid #fff; border-radius: 50%;
+				font-size: 30px; color: #fff; padding: 17px;
+				top: 50%; left: 50%; margin-top: -35px; margin-left: -35px; position: absolute; z-index: 1;
+				display: none; }
+
+.work-img-figcaption-name { font-size: 20px; color: #5a5a5a; line-height: 1; margin-top: 20px; }
+.work-img-figcaption-time { color: #afafaf; line-height: 1; margin-top: -10px; }
+.work-img-btn-view { text-align: center; color: #fff; line-height: 1; background: #e59728; border-radius: 2px; padding: 5px 0; margin-top: 20px; }
+.work-img-tag { clear: both; }
+.work-img-tag p { float: left; color: #afafaf; line-height: 1; background: #fff; padding: 1px 5px; margin-right: 10px;
+					border: 1px solid #e4e4e4; border-radius: 2px; }

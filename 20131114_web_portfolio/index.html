@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Panupat Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="lib/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="lib/css/style.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/js/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="lib/js/jquery.scrollTo-1.4.2-min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="lib/shiv/html5shiv.js"></script>
+      <script src="lib/shiv/respond.min.js"></script>
+    <![endif]-->
+
+    
+    <!-- Effect -->
+    <script>
+    $(document).ready(function() {
+        $("#nav").localScroll(800);
+        //$("#enter-site-arrow").localScroll(800);
+        $(".work-img-btn-view, .work-img-screen-img, .work-img-screen-link").hover(function() {
+            $(".work-img-screen-img").css("opacity","0.7");
+            $(".work-img-btn-view").css("background","#e87810");
+            $(".work-img-screen-link").fadeIn("slow");
+        }, function() {
+            $(".work-img-btn-view").css("background","#e59728");
+            $(".work-img-screen-img").css("opacity","1");
+            $(".work-img-screen-link").fadeOut("slow");
+        });
+    });
+    </script>
+
+</head>
+
+<body>
+    <div id="enter-site">
+        <div id="enter-site-principle" class="col-sm-6 col-sm-push-3 no-padding">
+            <h1 class="color-black1">"คนเราย่อมมีทั้งดีและเสีย ไม่มีใครดีเลิศไปเสียทุกเรื่องหรอก
+                <span class="color-orange">แต่เราสามารถเลือกมองแต่ด้านดีของเขาได้"</span>
+            </h1>
+            <img src="img/pic.jpg" id="principle-img" class="border-blue-pink">
+            <p>PANUPAT K.</p>
+            <p>WEB DEVELOPER</p>
+        </div>
+        <!--/ end enter-site-principle -->
+
+        <div id="enter-site-arrow">
+            <a href="#work">arrow</a>
+        </div>
+        <!--/ end enter-site-arrow -->
+
+    </div>
+    <!--/ end enter-site -->
+
+    <header id="header" class="header-style-big">
+        <nav id="navigation" class="container no-padding">
+            <ul id="nav">
+                <li id="navigation-logo" class="col-sm-9 no-padding">
+                    <a href="index.html" class="style-link-logo">Medunla</a>
+                </li>
+                <li id="navigation-work" class="col-sm-1 no-padding">
+                    <a href="#work">Work</a>
+                </li>
+                <li id="navigation-about" class="col-sm-1 no-padding">
+                    <a href="#work">About</a>
+                </li>
+                <li id="navigation-contact" class="col-sm-1 no-padding">
+                    <a href="#work">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="header-border" class="border-blue-pink-line"></div>
+    <!--/ end header -->
+
+    <section id="work" class="container no-padding">
+
+        <article class="work-wrap col-sm-4 no-padding-l padding-r-15 clear-l">
+            <figure>
+                <div class="work-img-screen">
+                    <a href="#" class="work-img-screen-link style-link-work-img glyphicon glyphicon-link"></a>
+                    <img src="img/work-img.jpg" class="work-img-screen-img">
+                </div>
+            </figure>
+            <figcaption class="col-sm-9 no-padding">
+                <p class="work-img-figcaption-name">Rayongtrips</p>
+                <p class="work-img-figcaption-time">23/9/54</p>
+            </figcaption>
+            <div class="work-img-btn-view col-sm-3 no-padding">
+                View
+            </div>
+            <!--/ end btn View -->
+            <div class="work-img-tag">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>PHP</p>
+            </div>
+            <!--/ end tag -->
+        </article>
+        <!--/ end work article -->
+
+        <article class="col-sm-4 work-wrap padding-l-r-15">
+            <figure>
+                <div class="work-img-screen">
+                    <a href="#" class="work-img-screen-link style-link-work-img glyphicon glyphicon-link"></a>
+                    <img src="img/work-img.jpg" class="work-img-screen-img">
+                </div>
+            </figure>
+            <figcaption class="col-sm-9 no-padding">
+                <p class="work-img-figcaption-name">Rayongtrips</p>
+                <p class="work-img-figcaption-time">23/9/54</p>
+            </figcaption>
+            <div class="work-img-btn-view col-sm-3 no-padding">
+                View
+            </div>
+            <!--/ end btn View -->
+            <div class="work-img-tag">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>PHP</p>
+            </div>
+            <!--/ end tag -->
+        </article>
+        <!--/ end work article -->
+
+        <article class="col-sm-4 work-wrap no-padding-r padding-l-15 clear-r">
+            <figure>
+                <div class="work-img-screen">
+                    <a href="#" class="work-img-screen-link style-link-work-img glyphicon glyphicon-link"></a>
+                    <img src="img/work-img.jpg" class="work-img-screen-img">
+                </div>
+            </figure>
+            <figcaption class="col-sm-9 no-padding">
+                <p class="work-img-figcaption-name">Rayongtrips</p>
+                <p class="work-img-figcaption-time">23/9/54</p>
+            </figcaption>
+            <div class="work-img-btn-view col-sm-3 no-padding">
+                View
+            </div>
+            <!--/ end btn View -->
+            <div class="work-img-tag">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>PHP</p>
+            </div>
+            <!--/ end tag -->
+        </article>
+        <!--/ end work article -->
+
+        <article class="work-wrap col-sm-4 no-padding-l padding-r-15 clear-l">
+            <figure>
+                <div class="work-img-screen">
+                    <a href="#" class="work-img-screen-link style-link-work-img glyphicon glyphicon-link"></a>
+                    <img src="img/work-img.jpg" class="work-img-screen-img">
+                </div>
+            </figure>
+            <figcaption class="col-sm-9 no-padding">
+                <p class="work-img-figcaption-name">Rayongtrips</p>
+                <p class="work-img-figcaption-time">23/9/54</p>
+            </figcaption>
+            <div class="work-img-btn-view col-sm-3 no-padding">
+                View
+            </div>
+            <!--/ end btn View -->
+            <div class="work-img-tag">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>PHP</p>
+            </div>
+            <!--/ end tag -->
+        </article>
+        <!--/ end work article -->
+
+        <article class="col-sm-4 work-wrap padding-l-r-15">
+            <figure>
+                <div class="work-img-screen">
+                    <a href="#" class="work-img-screen-link style-link-work-img glyphicon glyphicon-link"></a>
+                    <img src="img/work-img.jpg" class="work-img-screen-img">
+                </div>
+            </figure>
+            <figcaption class="col-sm-9 no-padding">
+                <p class="work-img-figcaption-name">Rayongtrips</p>
+                <p class="work-img-figcaption-time">23/9/54</p>
+            </figcaption>
+            <div class="work-img-btn-view col-sm-3 no-padding">
+                View
+            </div>
+            <!--/ end btn View -->
+            <div class="work-img-tag">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>PHP</p>
+            </div>
+            <!--/ end tag -->
+        </article>
+        <!--/ end work article -->
+
+        <article class="col-sm-4 work-wrap no-padding-r padding-l-15 clear-r">
+            <figure>
+                <div class="work-img-screen">
+                    <a href="#" class="work-img-screen-link style-link-work-img glyphicon glyphicon-link"></a>
+                    <img src="img/work-img.jpg" class="work-img-screen-img">
+                </div>
+            </figure>
+            <figcaption class="col-sm-9 no-padding">
+                <p class="work-img-figcaption-name">Rayongtrips</p>
+                <p class="work-img-figcaption-time">23/9/54</p>
+            </figcaption>
+            <div class="work-img-btn-view col-sm-3 no-padding">
+                View
+            </div>
+            <!--/ end btn View -->
+            <div class="work-img-tag">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>PHP</p>
+            </div>
+            <!--/ end tag -->
+        </article>
+        <!--/ end work article -->
+
+        <article class="work-wrap col-sm-4 no-padding-l padding-r-15 clear-l">
+            <figure>
+                <div class="work-img-screen">
+                    <a href="#" class="work-img-screen-link style-link-work-img glyphicon glyphicon-link"></a>
+                    <img src="img/work-img.jpg" class="work-img-screen-img">
+                </div>
+            </figure>
+            <figcaption class="col-sm-9 no-padding">
+                <p class="work-img-figcaption-name">Rayongtrips</p>
+                <p class="work-img-figcaption-time">23/9/54</p>
+            </figcaption>
+            <div class="work-img-btn-view col-sm-3 no-padding">
+                View
+            </div>
+            <!--/ end btn View -->
+            <div class="work-img-tag">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>PHP</p>
+            </div>
+            <!--/ end tag -->
+        </article>
+        <!--/ end work article -->
+
+        <article class="col-sm-4 work-wrap padding-l-r-15">
+            <figure>
+                <div class="work-img-screen">
+                    <a href="#" class="work-img-screen-link style-link-work-img glyphicon glyphicon-link"></a>
+                    <img src="img/work-img.jpg" class="work-img-screen-img">
+                </div>
+            </figure>
+            <figcaption class="col-sm-9 no-padding">
+                <p class="work-img-figcaption-name">Rayongtrips</p>
+                <p class="work-img-figcaption-time">23/9/54</p>
+            </figcaption>
+            <div class="work-img-btn-view col-sm-3 no-padding">
+                View
+            </div>
+            <!--/ end btn View -->
+            <div class="work-img-tag">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>PHP</p>
+            </div>
+            <!--/ end tag -->
+        </article>
+        <!--/ end work article -->
+
+        <article class="col-sm-4 work-wrap no-padding-r padding-l-15 clear-r">
+            <figure>
+                <div class="work-img-screen">
+                    <a href="#" class="work-img-screen-link style-link-work-img glyphicon glyphicon-link"></a>
+                    <img src="img/work-img.jpg" class="work-img-screen-img">
+                </div>
+            </figure>
+            <figcaption class="col-sm-9 no-padding">
+                <p class="work-img-figcaption-name">Rayongtrips</p>
+                <p class="work-img-figcaption-time">23/9/54</p>
+            </figcaption>
+            <div class="work-img-btn-view col-sm-3 no-padding">
+                View
+            </div>
+            <!--/ end btn View -->
+            <div class="work-img-tag">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>PHP</p>
+            </div>
+            <!--/ end tag -->
+        </article>
+        <!--/ end work article -->
+
+    </section>
+    <!--/ end work -->
+
+    <section id="about" class="container no-padding">
+        <figure class="col-sm-4">
+            <img src="">
+        </figure>
+        <footer>
+
+        </footer>
+    </section>
+    <!--/ end about -->
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

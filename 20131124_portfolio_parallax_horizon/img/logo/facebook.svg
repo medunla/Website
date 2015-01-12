@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="700px"
+	 height="700px" viewBox="0 0 700 700" enable-background="new 0 0 700 700" xml:space="preserve">
+<g id="Layer_1" display="none">
+	
+		<image display="inline" overflow="visible" opacity="0.5" width="1280" height="1024" xlink:href="C6EF6A51.jpg"  transform="matrix(1 0 0 1 -27.8149 -56.958)">
+	</image>
+</g>
+<g id="Layer_3" display="none">
+	<rect display="inline" fill="#808285" width="700" height="700"/>
+</g>
+<g id="Layer_7">
+</g>
+<g id="plane" display="none">
+	<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" d="M584.286,261.575
+		c0,59.248-32.475,106.108-58.316,154.581c-32.941,61.784-175.711,256.071-175.711,256.071S207.488,473.524,175.497,417.233
+		c-27.378-48.171-59.266-95.892-59.266-155.658c0-129.252,104.776-234.028,234.028-234.028
+		C479.51,27.547,584.286,132.323,584.286,261.575z"/>
+	
+		<circle display="inline" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" cx="350.259" cy="261.575" r="89.787"/>
+</g>
+<g id="mail" display="none">
+	
+		<rect x="17.518" y="117.178" display="inline" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" width="665.482" height="491.78"/>
+	
+		<line display="inline" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" x1="17.518" y1="117.178" x2="350.259" y2="373.22"/>
+	
+		<line display="inline" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" x1="350.259" y1="373.22" x2="683" y2="117.178"/>
+</g>
+<g id="phone" display="none">
+	
+		<rect x="156.701" y="23.333" display="inline" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" width="386.599" height="652.667"/>
+	
+		<rect x="211.478" y="104.719" display="inline" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" width="278.596" height="466.414"/>
+	<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" d="M374.265,625.914
+		c0,13.398-10.859,24.261-24.262,24.261c-13.408,0-24.266-10.862-24.266-24.261s10.858-24.262,24.266-24.262
+		C363.405,601.652,374.265,612.516,374.265,625.914z"/>
+</g>
+<g id="face">
+	<path fill="none" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" d="M270.272,225.225V79.383
+		c0,0,9.972-52.354,54.847-52.354c44.875,0,183.238,0,183.238,0v114.679h-79.778c0,0-14.958,2.493-14.958,14.958
+		c0,12.466,0,68.559,0,68.559h94.736v118.418h-95.981V673.97H270.272V344.891h-78.112V225.225H270.272z"/>
+</g>
+</svg>

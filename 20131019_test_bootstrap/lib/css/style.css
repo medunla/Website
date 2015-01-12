@@ -1,0 +1,23 @@
+body {
+	background: #fff;
+}
+
+.container {
+	background: #eee;
+}
+
+.color1 {
+	background: #ccc;
+}
+
+.no-padding {
+	padding: 0px;
+}
+
+.no-padding-l {
+	padding-left: 0px;
+}
+
+.no-padding-r {
+	padding-right: 0px;
+}
